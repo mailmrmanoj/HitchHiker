@@ -1,0 +1,54 @@
+<div ng-controller="peopleCtrl">
+
+
+    <div class="container">
+        <h2>Riders</h2>
+        <p>This page displays the list of riders who are interested in offering a ride</p>
+        <table class="table table-striped">
+            <thead>
+
+            </thead>
+            <tbody>
+
+            <tr>
+                <td> </td>
+                <td></td>
+                <td></td>
+            </tr>
+            </tbody>
+        </table>
+
+
+     <div class="col-md-10">
+        <!--Body content-->
+        <div ng-repeat="item in inputs">
+            <div class="row">
+                <div class="col-md-4">
+                    <a><img ng-src="img/user.jpg" class="img-rounded"></a>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-4">
+                   <strong>User Name</strong> <p> {{item.name}}</p>
+                    <strong>Gender</strong>  <p> {{item.gender}}</p>
+                        </div><div class="col-md-6">
+                    <strong>Ride details</strong>  <p> {{item.location}}</p><strong>Time</strong>  <p> {{item.time}}</p></div>
+                        <!--<strong>Time</strong>  <p> {{item.time}}</p></div>-->
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <button type="button" class="btn-primary" ng-click="openTextArea='true'">Offer</button>
+                    <button type="button" class="btn-success" ng-click="openTextArea='true'">Request Contact</button>
+                 <br>  <br>
+                    <textarea placeholder="Enter the message" ng-show="openTextArea"></textarea>
+                    <button type="button" class="btn-success" >Request Contact</button>
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+</div>
+    </div>
